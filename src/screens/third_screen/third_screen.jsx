@@ -10,7 +10,7 @@ const Third_Screen = () => {
                     <Arrow name='arrow-back' size={20} color='#0b1f51'></Arrow>
 
                 </View>
-                <Image source={require('../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
+                <Image source={require('../../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
 
             </View>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 20 }}>
@@ -102,8 +102,8 @@ const FeatureComponent = (props) => {
             <Text>{props.names}</Text>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 20 }}>
                 <View >
-                    <Image source={require('../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
-                    <Image source={require('../Image/passportPhoto2.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2, position: 'absolute', left: 30 }}></Image>
+                    <Image source={require('../../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
+                    <Image source={require('../../Image/passportPhoto2.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2, position: 'absolute', left: 30 }}></Image>
                 </View>
                 <Text>{props.timing}</Text>
             </View>

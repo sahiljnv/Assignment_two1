@@ -1,11 +1,12 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/dist/Entypo';
-import Calendar from 'react-native-vector-icons/dist/AntDesign';
-import Home from 'react-native-vector-icons/dist/Feather';
-import File from 'react-native-vector-icons/dist/AntDesign';
-import People from 'react-native-vector-icons/dist/Ionicons';
-import Bell from 'react-native-vector-icons/dist/FontAwesome6';
+import Calendar from 'react-native-vector-icons/AntDesign';
+import Home from 'react-native-vector-icons/Feather';
+import File from 'react-native-vector-icons/AntDesign';
+import People from 'react-native-vector-icons/Ionicons';
+import Bell from 'react-native-vector-icons/FontAwesome6';
+import Box1 from '../../components/box1_component';
+import Box2 from '../../components/box2_component';
 
 
 const Secont_Screen = () => {
@@ -17,7 +18,7 @@ const Secont_Screen = () => {
                 <View style={{width:5,height:20,backgroundColor:"white",borderRadius:5,marginTop:7}}></View>
                 <View style={{width:5,height:20,backgroundColor:"white",borderRadius:5}}></View>
                </View>
-                <Image source={require('../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
+                <Image source={require('../../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
             </View>
             <View style={{ paddingTop: 40 ,paddingBottom:30}}>
                 <Text style={{ color: 'white', fontSize: 40, fontWeight: 'bold' }}>Hi Sahil</Text>
@@ -28,8 +29,8 @@ const Secont_Screen = () => {
                 <Text>Mike and Rohani</Text>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingTop: 20 }}>
                     <View >
-                        <Image source={require('../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
-                        <Image source={require('../Image/passportPhoto2.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2, position: 'absolute', left: 30 }}></Image>
+                        <Image source={require('../../Image/passportPhoto1.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2 }}></Image>
+                        <Image source={require('../../Image/passportPhoto2.jpg')} style={{ height: 40, width: 40, borderRadius: 20, borderColor: 'white', borderWidth: 2, position: 'absolute', left: 30 }}></Image>
                     </View>
                     <Text >Now </Text>
 
@@ -68,22 +69,7 @@ const Secont_Screen = () => {
     )
 }
 
-const Box1 = (props) => {
-    return (
-        <View style={{ backgroundColor: '#5451d6', height: 180, width: 160, borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 40, color: 'white', fontWeight: 'bold' }}>{props.day}</Text>
-            <Text >{props.note}</Text>
-        </View>
-    )
-}
 
-const Box2 = (props) => {
-    return (
-        <View style={{ backgroundColor: '#5451d6', height: 100, width: 160, borderRadius: 20, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 40, color: 'white', fontWeight: 'bold' }}>{props.day}</Text>
-            <Text >{props.note}</Text>
-        </View>
-    )
-}
+
 
 export default Secont_Screen;
