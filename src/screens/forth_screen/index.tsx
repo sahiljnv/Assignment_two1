@@ -2,33 +2,34 @@ import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
 import { styles } from './style';
 import ColorButtonComponent from '../../components/color_button_component';
-function handleCases(setRedValue, setGreenValue, setBlueValue, redValue, greenValue, blueValue) {
-    if (redValue < 0) {
-        setRedValue(0);
-    }
-    if (redValue > 255) {
-        setRedValue(255)
-    } if (greenValue < 0) {
-        setGreenValue(0);
-    }
-    if (greenValue > 255) {
-        setGreenValue(255)
-    }
-    if (blueValue < 0) {
-        setBlueValue(0);
-    }
-    if (blueValue > 255) {
-        setBlueValue(255)
-    }
-}
 
 
-const Color_Box = () => {
+
+const ColorBox = () => {
     const [redValue, setRedValue] = useState(0);
     const [greenValue, setGreenValue] = useState(0);
     const [blueValue, setBlueValue] = useState(0);
+    function handleCases(redValue:number, greenValue:number, blueValue:number) {
+        if (redValue < 0) {
+            setRedValue(0);
+        }
+        if (redValue > 255) {
+            setRedValue(255)
+        } if (greenValue < 0) {
+            setGreenValue(0);
+        }
+        if (greenValue > 255) {
+            setGreenValue(255)
+        }
+        if (blueValue < 0) {
+            setBlueValue(0);
+        }
+        if (blueValue > 255) {
+            setBlueValue(255)
+        }
+    }
 
-    handleCases(setRedValue, setGreenValue, setBlueValue, redValue, greenValue, blueValue);
+    handleCases(redValue, greenValue, blueValue);
 
     useEffect(() => {
         console.warn('Red value is updated by: ', redValue);
@@ -40,19 +41,19 @@ const Color_Box = () => {
         console.warn('Blue value is updated by: ', blueValue);
     }, [blueValue]);
 
-    const handleRedColorClick = (value) => {
+    const handleRedColorClick = (value:number) => {
         setRedValue(prevVal => {
             return prevVal + value
         })
     }
 
-    const handleBlueColorClick = (value) => {
+    const handleBlueColorClick = (value:number) => {
         setBlueValue(prevVal => {
             return prevVal + value
         })
     }
 
-    const handleGreenColorClick = (value) => {
+    const handleGreenColorClick = (value:number) => {
         setGreenValue(prevVal => {
             return prevVal + value
         })
@@ -80,4 +81,4 @@ const Color_Box = () => {
 
 
 
-export default Color_Box;
+export default ColorBox;

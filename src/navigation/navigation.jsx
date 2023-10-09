@@ -14,7 +14,7 @@ export default function navigation() {
     return (
         <View style={{height:'100%'}}>
             <NavigationContainer>
-                <Tab.Navigator screenOptions={({route,navigation})=>({
+                <Tab.Navigator screenOptions={({route})=>({
                     tabBarIcon:({color,size})=>{
                         let iconName;
                         if(route.name === "First"){

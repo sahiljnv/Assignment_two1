@@ -1,5 +1,5 @@
     export  const setTabColor = (screen: string)=>{
-        let tabColor;
+        let tabColor:string='';
         if(screen === "First"){
             tabColor = '#0b1f51'
         }else if (screen === 'Second'){

@@ -5,7 +5,7 @@ import Box1 from '../../components/box1_component';
 import Box2 from '../../components/box2_component';
 import { styles } from './style';
 
-const Secont_Screen = () => {
+const SecontScreen = () => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.navBarContainer}>
@@ -52,4 +52,4 @@ const Secont_Screen = () => {
 
 
 
-export default Secont_Screen;
+export default SecontScreen;

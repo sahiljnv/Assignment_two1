@@ -4,7 +4,7 @@ import Arrow from 'react-native-vector-icons/MaterialIcons';
 import DayComponent from '../../components/day_component';
 import FeatureComponent from '../../components/feature_component';
 import { styles } from './style';
-const Third_Screen = () => {
+const ThirdScreen = () => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.navContainer}>
@@ -89,4 +89,4 @@ const Third_Screen = () => {
 
 
 
-export default Third_Screen;
+export default ThirdScreen;

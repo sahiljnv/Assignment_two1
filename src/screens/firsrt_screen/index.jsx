@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image} from 'react-native';
 import { styles } from './style';
-const First_Screen = () => {
+const FirstScreen = () => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.imgContainger}>
@@ -21,4 +21,4 @@ const First_Screen = () => {
 
 
 
-export default First_Screen;
+export default FirstScreen;
