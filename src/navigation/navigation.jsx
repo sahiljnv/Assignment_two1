@@ -2,12 +2,12 @@ import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import First_Screen from '../screens/firsrt_screen/first_screen';
-import Color_Box from '../screens/forth_screen/colorBox';
+import First_Screen from '../screens/firsrt_screen';
+import Color_Box from '../screens/forth_screen';
 import Home from 'react-native-vector-icons/Feather';
 import { setTabColor } from '../utils/utils';
-import Secont_Screen from '../screens/second_screen/secont_screen';
-import Third_Screen from '../screens/third_screen/third_screen';
+import Secont_Screen from '../screens/second_screen';
+import Third_Screen from '../screens/third_screen';
 const Tab = createBottomTabNavigator();
 export default function navigation() {
     
